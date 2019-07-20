@@ -58,3 +58,67 @@ body{
   line-height: 36px;
   font-weight: 700;
 }
+// Servoces
+
+.services{
+  background-color: $bg;
+}
+.content__title{
+  padding-top: 94px;
+  margin-bottom: 74px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  text-align: center;
+}
+.services__items{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.services__item-title{
+  padding-top: 28px;
+  padding-bottom: 8px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: $title;
+}
+.services__item-text{
+  font-size: 16px;
+  line-height: 1.75;
+  padding-bottom: 196px;
+}
+// Rent
+
+.rent__items{
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 88px;
+}
+.rent__item{
+  width: 290px;
+  height: 380px;
+  object-fit: contain;
+  background-color: $bg;
+  border: 1px solid #fff;
+  padding-top: 6px;
+  img{
+    padding-top: 20px;
+    object-fit: contain;
+  }
+}
+
+.rent__item-name{
+  width: 242px;
+  height: 40px;
+  border: solid 4px #323232;
+  text-align: center;
+  margin:0px auto;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
