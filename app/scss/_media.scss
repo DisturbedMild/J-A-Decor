@@ -273,6 +273,9 @@
   .complex__slider-num{
     right: 18%;
   }
+  .copyright {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -315,6 +318,9 @@
     bottom: 7%;
     right: 19%;
   }
+  .copyright {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -351,5 +357,8 @@
   }
   .complex__slider-num{
     right: 23%;
+  }
+  .copyright {
+    font-size: 9px;
   }
 }
