@@ -28,13 +28,16 @@ body{
 }
   
 .main__bg-img{
-  max-width: 860px;
-  width: 100%;
-  height: 640px;
+
   box-shadow: 0 6px 34px 0 rgba(0, 0, 0, 0.35);
   background-color: #d8d8d8;
   position: absolute;
   right: 0;
+  img {
+    max-width: 860px;
+    width: 100%;
+    display: block;
+  }
 }
 .main__inner{
   width: 480px;
@@ -45,7 +48,7 @@ body{
   position: absolute;
   background-color: #fff;
   text-align: center;
-  
+  z-index: 10;
 }
 .main__title{
   font-size: 70px;
@@ -59,7 +62,7 @@ body{
   line-height: 36px;
   font-weight: 700;
 }
-// Servoces
+// Services
 
 .services{
   background-color: $bg;
@@ -80,9 +83,10 @@ body{
 .services__item{
   display: block;
   img{
-    width: 360px;
-  height: 260px;
-  box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+    max-width: 360px;
+    width: 100%;
+    height: 260px;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
   }
 }
 .services__item-title{
@@ -96,7 +100,7 @@ body{
 .services__item-text{
   font-size: 22px;
   line-height: 1.75;
-  padding-bottom: 196px;
+  padding-bottom: 120px;
 }
 // Rent
 
@@ -104,7 +108,7 @@ body{
   background-color: #fdfdfd;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   padding-bottom: 88px;
 }
@@ -141,25 +145,23 @@ body{
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
-  .production__slider-num{
-    position: absolute;
-    right: 5%;
-    font-size: 16px;
-    font-weight: 600;
-  }
+  display:flex;
+  flex-wrap: wrap;
+  
 }
-
+.production__slider-num{
+  position: absolute;
+  right: 6%;
+  bottom: 8%;
+  font-size: 16px;
+  font-weight: 600;
+}
 
 .production__info{
   max-width: 320px;
   width: 100%;
   margin-right: 40px;
   margin-left: 60px;
-  float: left;
-  &::after{
-    content:'';
-    clear: both;
-  }
 }
 .production__title{
   font-size: 40px;
@@ -178,9 +180,15 @@ body{
 }
 .production__slider{
   position: relative;
+  max-width:860px;
+  width:100%;
 }
 .production__item{
   margin-right: 25px;
+  img {
+    max-width: 800px;
+    width: 100%;
+  }
 }
 
 .production__slider{
@@ -194,30 +202,32 @@ body{
     outline:none;
   }
   .slick-prev{
-    left:40%;
+    left:10%;
     bottom: -22px;
     z-index: 100;
     position: absolute;
     &:after{
-      content: '\f177';
-      font-family: 'icomoon';
-      width: 32px;
+      content: '';
+      display: inline-block;
+      background-image: url(../svg/arrow-left.svg);
       height: 32px;
-      font-size: 27px;
-      color: $title;
+      max-width: 32px;
+      width: 100%;
+      background-repeat: no-repeat;
     }
   }
   .slick-next{
     position: absolute;
-    right: 10%;
+    right: 15%;
     bottom: -22px;
     &:after{
-      content: '\f178';
-      font-family: 'icomoon';;
-      width: 32px;
+      content: '';
+      display: inline-block;
+      background-image: url(../svg/arrow-right.svg);
       height: 32px;
-      font-size: 27px;
-      color: $title;
+      max-width: 32px;
+      width: 100%;
+      background-repeat: no-repeat;
     }
   }
 }
@@ -229,36 +239,27 @@ body{
 
 .complex__wrapper{
   background-color: $bg;
-  height: 800px;
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
-  .complex__slider-num{
-    position: absolute;
-    left: 8%;
-    bottom: 7%;
-    font-size: 16px;
-    font-weight: 600;
-  }
+  display:flex;
+  flex-wrap: wrap-reverse;
+
+  
 }
-.complex__slider{
-  float: left;
-  max-width: 870px;
-  width: 100%;
-  &:after{
-    content: '';
-    clear: both;
-  }
-  .complex__item{
-    margin-left: 35px;
-    
-  }
+.complex__slider-num{
+  position: absolute;
+  left: 6%;
+  bottom: 8%;
+  font-size: 16px;
+  font-weight: 600;
 }
+
 .complex__info{
   max-width: 320px;
   width: 100%;
-  display: inline-block;
-  margin-left: 40px;
+  margin-right: 40px;
+  margin-left: 60px;
 }
 .complex__title{
   font-size: 40px;
@@ -269,15 +270,27 @@ body{
   font-size: 18px;
   padding-top: 20px;
   padding-left: 5px;
-  font-weight: 500;
   color: #4a4a4a;
+  font-weight: 500;
   p{
     padding-top:10px;
   }
 }
+.complex__slider{
+  position: relative;
+  max-width:860px;
+  width:100%;
+}
+.complex__item{
+  margin-left: 65px;
+  margin-right: -37px;
+  img {
+    max-width: 800px;
+    width: 100%;
+  }
+}
 
 .complex__slider{
-  
   .slick-arrow{
     background: #fff;
     width: 60px;
@@ -288,36 +301,33 @@ body{
     outline:none;
   }
   .slick-prev{
-    left:85%;
+    left:20%;
     bottom: -22px;
     z-index: 100;
     position: absolute;
     &:after{
-      content: '\f178';
-      font-family: 'icomoon';;
-      width: 32px;
+      content: '';
+      display: inline-block;
+      background-image: url(../svg/arrow-left.svg);
       height: 32px;
-      font-size: 27px;
-      color: $title;;
+      max-width: 32px;
+      width: 100%;
+      background-repeat: no-repeat;
     }
   }
   .slick-next{
     position: absolute;
-    right: 75%;
+    right: 8%;
     bottom: -22px;
     &:after{
-      content: '\f177';
-      font-family: 'icomoon';
-      width: 32px;
+      content: '';
+      display: inline-block;
+      background-image: url(../svg/arrow-right.svg);
       height: 32px;
-      font-size: 27px;
-      color: $title;
+      max-width: 32px;
+      width: 100%;
+      background-repeat: no-repeat;
     }
-  }
-}
-.slick-slide{
-  img{
-    display: inherit;
   }
 }
 
@@ -326,36 +336,42 @@ body{
 // Contacts
 
 
-.contacts{
-  margin-top: 100px;
-  padding-bottom: 150px;
+.contacts {
+  margin-top: 150px;
+  padding-bottom: 50px;
 }
 
-.contacts__wrapper{
+.contacts__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.contacts__info{
+.contacts__info {
   max-width: 320px;
   width: 100%;
+  padding-left: 15px;
 
 }
-
-.contacts__title{
+.contacts__img {
+  img {
+    max-width: 800px;
+    width: 100%;
+  }
+}
+.contacts__title {
   font-size: 40px;
   font-weight: 700;
   color: $title;
 
 }
-.contacts__item-title{
+.contacts__item-title {
   font-weight: 700;
   font-size: 20px;
   color: #4a4a4a;
   padding-top: 20px;
 }
 
-.contacts__item-text{
+.contacts__item-text {
   a{
     text-decoration: none;
     color: #4a4a4a;
@@ -366,50 +382,71 @@ body{
   
 }
 
-.item__adress:before{
-    content:'\f041';
-    font-family: 'icomoon';
-    padding-right: 15px;
-    padding-left: 5px;
-    font-size: 30px;
-    
+.item__adress:before {
+    content:'';
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../svg/placeholder.svg);
+    background-repeat: no-repeat;
+    max-width: 30px;
+    width: 100%;
+    height: 30px;
 }
 
-.item__tel:before{
-  content:'\f10b';
-    font-family: 'icomoon';
-    padding-right: 15px;
-    padding-left: 5px;
-    font-size: 38px;
-    vertical-align: middle;
+.item__tel:before {
+  content:'';
+  display: inline-block;
+  background-image: url(../svg/smartphone-call.svg);
+  background-repeat: no-repeat;
+  max-width: 30px;
+  width: 100%;
+  height: 32px;
+  vertical-align: middle;
+  padding-right: 5px;
 }
-.item__instagram:before{
-  content:'\f16d';
-    font-family: 'icomoon';
-    font-size: 28px;
-    vertical-align: middle;
-    padding-right: 15px;
+.item__instagram:before {
+  content:'';
+  display: inline-block;
+  background-image: url(../svg/instagram.svg);
+  background-repeat: no-repeat;
+  max-width: 30px;
+  width: 100%;
+  height: 30px;
+  padding-right: 5px;
+  vertical-align: middle;
 }
 
-.contacts__email{
+.contacts__email {
   text-decoration: none;
   color: #4a4a4a;
   font-size: 20px;
   font-weight: 400;
   line-height: 38px;
 }
-.contacts__email:before{
-  content:'\f0e0';
-    font-family: 'icomoon';
-    padding-right: 15px;
-    font-size: 22px;
-    vertical-align: middle;
+.contacts__email:before {
+  content:'';
+  display: inline-block;
+  background-image: url(../svg/email.svg);
+  background-repeat: no-repeat;
+  max-width: 30px;
+  width: 100%;
+  height: 30px;
+  padding-right: 5px;
+  vertical-align: middle;
 }
 
 // Copyright
 
-.copyright{
+.copyright {
   text-align: center;
   background-color: $bg;
   font-size: 16px;
 }
+
+
+
+
+
+
+
+@import 'media';
