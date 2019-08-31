@@ -59,6 +59,12 @@
     text-align: center;
     display: block;
   }
+  .complex__text {
+    font-size: 22px;
+    padding-top: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
   .complex__slider-num {
     right: 28%;
     bottom: 5%;
@@ -167,14 +173,6 @@
 }
 
 @media (max-width: 800px) {
-  .complex__slider {
-    .slick-prev {
-      left: 10%;
-    }
-    .slick-next {
-      right: 10%;
-    }
-  }
   .contacts {
     margin-top: 150px;
   }
