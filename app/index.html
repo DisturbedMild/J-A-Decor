@@ -6,29 +6,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>J+A Decor</title>
+    <link rel="shortcut icon" href="img/brows-icon.ico">
     <link rel="stylesheet" href="css/libs.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Main -->
     <section class="main">
-        <div class="main__wrapper">
-            <div class="main__bg-img">
-                <img src="img/main_page.jpg" alt="">
+        <div class="main__inner">
+            <div class="main__title">
+                J+A Decor
             </div>
-            <div class="main__inner">
-                <div class="main__title">
-                    J+A Decor
+            <div class="main__text">
+                Аренда и изготовление декора
+            </div>
+        </div>
+        <div class="main__bg-img">
+            <img src="img/main_page.jpg" alt="">
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="services">
+        <div class="container">
+            <div class="content__title">
+                Услуги
+            </div>
+            <div class="services__items">
+                <div class="services__item">
+                    <img src="img/rent-img.jpg" srcset="img/rent-img@2x.jpg 2x,
+                    img/rent-img@3x.jpg 3x" alt="">
+                    <div class="services__item-title">
+                        Изготовление
+                    </div>
+                    <div class="services__item-text">
+                        Мы можем изготовить специально для Вас изделие по индивидуальному
+                        заказу.
+                    </div>
+
                 </div>
-                <div class="main__text">
-                    Аренда и изготовление декора
+                <div class="services__item">
+                    <img src="img/create-img.jpg" srcset="img/create-img@2x.jpg 2x,
+                    img/create-img@3x.jpg 3x" alt="">
+                    <div class="services__item-title">
+                        Аренда
+                    </div>
+                    <div class="services__item-text">
+                        Работаем как в комплексе с организацией свадьбы, так и отдельно.
+                    </div>
+                </div>
+                <div class="services__item">
+                    <img src="img/ready-img.jpg" srcset="img/ready-img@2x.jpg 2x,
+                    img/ready-img@3x.jpg 3x" alt="">
+                    <div class="services__item-title">
+                        Комплексные
+                    </div>
+                    <div class="services__item-text">
+                        Для Вашего удобства мы разработали привлекательные комплексные предложения.
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-   
+    <!-- Rent -->
+    <section class="rent">
+        <div class="container">
+            <div class="content__title">
+                Аренда
+            </div>
+            <div class="rent__items">
+                <div class="rent__item">
+                    <img src="img/candy-img.png" srcset="img/candy-img@2x.png 2x, img/candy-img@3x.png 3x"
+                        class="Candy_Img" alt="">
+                    <div class="rent__item-name">
+                        Тележка кэндибар
+                    </div>
+                </div>
+                <div class="rent__item">
+                    <img src="img/donuts-img.png" srcset="img/donuts-img@2x.png 2x, img/donuts-img@3x.png 3x"
+                        class="Donuts_Img">
+
+                    <div class="rent__item-name">
+                        Стенд для пончиков
+                    </div>
+                </div>
+                <div class="rent__item">
+                    <img src="img/egg-img.png" srcset="img/egg-img@2x.png 2x, img/egg-img@3x.png 3x" class="Egg_Img"
+                        alt="">
+
+                    <div class="rent__item-name">
+                        Тележка-яйцо
+                    </div>
+                </div>
+                <div class="rent__item">
+                    <img src="img/telega-img.png" srcset="img/telega-img@2x.png 2x, img/telega-img@3x.png 3x"
+                        class="Telega_Img" alt="">
+                    <div class="rent__item-name">
+                        Телега-прилавок
+                    </div>
+                </div>
+                <div class="rent__item">
+                    <img src="img/child-img.png" srcset="img/child-img@2x.png 2x, img/child-img@3x.png 3x"
+                        class="Child_Img" alt="">
+                    <div class="rent__item-name">
+                        Детская розовая тележка
+                    </div>
+                </div>
+                <div class="rent__item">
+                    <img src="img/icecream-img.png" srcset="img/icecream-img@2x.png 2x, img/icecream-img@3x.png 3x"
+                        class="Icecream_Img" alt="">
+                    <div class="rent__item-name">
+                        Стойка для мороженного
+                    </div>
+                </div>
+                <div class="rent__item">
+                    <img src="img/telegka-2-img.png" srcset="img/telegka-2-img@2x.png 2x, img/telegka-2-img@3x.png 3x"
+                        class="Telegka2_Img" alt="">
+                    <div class="rent__item-name">
+                        Тележка с подставкой
+                    </div>
+                </div>
+                <div class="rent__item">
+                    <img src="img/photo-img.png" srcset="img/photo-img@2x.png 2x, img/photo-img@3x.png 3x"
+                        class="Photo_Img" alt="">
+                    <div class="rent__item-name">
+                        Фотозона
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Production -->
+
+    <section class="production">
+
+        <div class="production__wrapper">
+            <div class="production__info">
+                <div class="production__title">
+                    Изготовление
+                </div>
+                <div class="production__text">
+
+                    Если Вам понравились наши товары, мы можем изготовить специально для Вас изделие по индивидуальному
+                    заказу.
+                    <p> Для этого достаточно прислать картинку изделия Вашей мечты, и мы воплотим идею любого цвета,
+                        размера и дизайна. </p>
+                </div>
+            </div>
+
+            <div class="production__slider">
+                <div class='production__item'>
+                    <img src="img/candy_bar_arenda_spb.JPG" alt="">
+                </div>
+                <div class='production__item'>
+                    <img src="img/candy_bar_arenda_spb1.jpg" alt="">
+                </div>
+                <div class='production__item'>
+                    <img src="img/candy_bar_arenda_spb2.JPG" alt="">
+                </div>
+                <div class='production__item'>
+                    <img src="img/candy_bar_arenda_spb3.JPG" alt="">
+                </div>
+                <div class='production__item'>
+                    <img src="img/candy_bar_arenda_spb4.JPG" alt="">
+                </div>
+                <div class='production__item'>
+                    <img src="img/candy_bar_arenda_spb5.JPG" alt="">
+                </div>
+                <div class='production__item'>
+                    <img src="img/candy_bar_arenda_spb6.JPG" alt="">
+                </div>
+            </div>
+            <span class="production__slider-num"><span class="production__num">1</span>/7</span>
+        </div>
+    </section>
+
+    <!-- Complex -->
+    <section class="complex">
+        <div class="complex__wrapper">
+            <div class="complex__slider">
+                <div class='complex__item'>
+                    <img src="img/candybar_minimouse.jpg" alt="">
+                </div>
+                <div class='complex__item'>
+                    <img src="img/beluibar.jpg" alt="">
+                </div>
+                <div class='complex__item'>
+                    <img src="img/bochka.JPG" alt="">
+                </div>
+                <div class='complex__item'>
+                    <img src="img/praznicbar.jpg" alt="">
+                </div>
+                <div class='complex__item'>
+                    <img src="img/img.png" alt="">
+                </div>
+            </div>
+            <span class="complex__slider-num"><span class="complex__num">1</span>/7</span>
+            <div class="complex__info">
+                <div class="complex__title">
+                    Комплексные предложения
+                </div>
+                <div class="complex__text">
+                    Для Вашего удобства мы разработали привлекательные комплексные предложения. <p> Вместе с тележками
+                        можно
+                        заказать кэндибар (сладкий стол), сырный стол, лимонад-бар или пончики.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contacts -->
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__info">
+                    <div class="contacts__title">
+                        Контакты
+                    </div>
+                    <div class="contacts__items">
+                        <div class="contact__item">
+                            <div class="contacts__item-title">
+                                Наш Адресс
+                            </div>
+                            <div class="contacts__item-text ">
+                                <a class="item__adress" target="_blank" href="https://goo.gl/maps/SdbY3whHQ9aCSyiB7">
+                                    г. Санкт-Петербург, улица Камчатская,19
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contacts__item-title">
+                                Телефон
+                            </div>
+                            <div class="contacts__item-text ">
+                                <a class="item__tel" href="tel:+7921899919">+7 (921) 899-91-9</a>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contacts__item-title">
+                                Социальные сети
+                            </div>
+                            <div class="contacts__item-text ">
+                                <a class="item__instagram">
+                                    jadecorspb
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contacts__item-title">
+                                Почта
+                            </div>
+                            <div class="contacts__item-text ">
+                                <div class="contacts__email">
+                                    jadecor@mail.ru
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts__img">
+                    <img src="img/contact-img.JPG" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Copyright -->
+
+    <div class="copyright">
+        Copyright © 2019 Vladyslav Dmytrenko. All Rights Reverved.
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

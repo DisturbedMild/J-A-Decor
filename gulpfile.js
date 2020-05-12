@@ -12,7 +12,7 @@ let
     return gulp.src('app/scss/*.scss')
         .pipe(scss({outputStyle:'expanded'}))
         .pipe(autoprefixer({
-            overrideBrowserslist: ['last 10 version'],
+            overrideBrowserslist:  ['last 10 version'],
         }))
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream:true}))
